@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
+
+:root {
+  /* Paleta de colores: https://coolors.co/palette/edede9-d6ccc2-f5ebe0-e3d5ca-d5bdaf */
+  --one: #d9dbf1;
+  --two: #d0cdd7;
+  --three: #acb0bd;
+  --four: #416165;
+  --five: #0b3948;
+  --font: "Josefin Sans", sans-serif;
+  --font-title: 2.6rem;
+  --font-subtitle: 2rem;
+  --font-text: 1.8rem;
+}
+/* FORMATEO GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+
+/* BODY */
+body {
+  width: 100vw;
+  /*height: 100vh;*/
+  background: white;
+  min-width: 320px;
+}
+
+/* HEADER */
+header {
+  min-width: 320px;
+  background: var(--two);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+.header-nav .header-nav-left {
+  width: 30%;
+}
+.header-nav .header-nav-left .logo {
+  color: var(--five);
+  font-size: 2rem;
+  letter-spacing: 1px;
+  /* width: 300px; */
+  font-weight: bold;
+}
+
+/* .header-nav .header-nav-left .logo:first-child {
+  color: var(--five);
+} */
+
+.header-nav .header-nav-left .logo span {
+  color: var(--four);
+  opacity: 0.7;
+}
+
+header .header-nav .header-nav-right {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 16px;
+}
+
+.header-nav .header-nav-right ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.header-nav .header-nav-right ul li a {
+  color: var(--five);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0 16px 0 0;
+  transition: 0.4s;
+}
+.header-nav .header-nav-right ul li a:hover {
+  color: var(--four);
+  transition: 0.4s;
+}
+.active {
+  border-bottom: 2px solid var(--five);
+  padding-bottom: 2px;
+}
+
+/* MAIN */
+main {
+  min-width: 320px;
+}
+.main-container {
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.main-container .main-container-image {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+.image-index {
+  background-image: url("../assets/img/home.jpeg");
+}
+
+.image-rooms {
+  background-image: url("../assets/img/fondo3.jpg");
+}
+
+.main-container h2 {
+  font-size: var(--font-title);
+  padding: 32px;
+}
+.main-container .main-container-text {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container .main-container-text p {
+  font-size: var(--font-text);
+  padding: 0 32px;
+  line-height: 3rem;
+}
+
+/* HABITACIONES */
+
+.main-container-text .rooms-services {
+  height: 300px;
+  width: 75vw;
+  min-width: 400px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-container-text .rooms-services p {
+  width: 50%;
+  min-width: 450px;
+  /* background-color: pink; */
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  padding: 0 0 16px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.main-container-text .rooms-services p span {
+  padding-right: 6px;
+}
+
+/* TARIFAS */
+.main-container-cards {
+  /* display: grid;
+  grid-template-areas: "card1 card2 card3 card4 card5";
+  justify-content: space-evenly; */
+  justify-content: center;
+}
+
+.main-container-cards section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px 20px;
+  height: 300px;
+  width: 200px;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+  background-color: var(--two);
+}
+
+.main-container-cards .cards {
+  height: auto;
+  text-align: center;
+}
+
+.main-container-cards .cards .card-item {
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--two);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+}
+/* .main-container-cards section h3 { */
+.main-container-cards div h3 {
+  font-size: var(--font-title);
+}
+
+/* .main-container-cards section img { */
+.main-container-cards div img {
+  width: 70%;
+  border-radius: 10px;
+}
+/* .main-container-cards section p { */
+.main-container-cards div p {
+  font-size: var(--font-subtitle);
+  margin-top: 10px;
+}
+/* .main-container-cards section p span { */
+.main-container-cards div p span {
+  padding-right: 8px;
+}
+
+/* .main-container-cards section button { */
+.main-container-cards div button {
+  width: 100px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: var(--font-text);
+  background-color: var(--three);
+  border: 2px solid var(--five);
+  color: var(--five);
+  cursor: pointer;
+}
+.main-container-cards div button:hover {
+  background-color: var(--five);
+  color: var(--three);
+  cursor: pointer;
+}
+
+/* DEFINO GRID EN CADA UNA DE LAS CARDS */
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.card5 {
+  grid-area: card5;
+}
+
+/* FORM */
+form {
+  width: 350px;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: var(--four);
+  border-radius: 8px;
+}
+
+form label {
+  font-size: 1.2rem;
+  padding-right: 8px;
+}
+
+form input,
+form textarea {
+  color: var(--five);
+  font-weight: bold;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+}
+
+form .form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form .form-buttons button {
+  background-color: white;
+  border: 2px solid var(--five);
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+/* SECCION FOOTER */
+footer {
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: var(--two);
+  border-top: 16px solid var(--three);
+  padding: 10px 30px;
+  /* margin-top: 100px; */
+  /*position: absolute;
+  bottom: 0;*/
+}
+
+footer .footer-nav {
+  padding-top: 8px;
+  display: flex;
+}
+
+footer .footer-nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+}
+
+footer .footer-nav-left ul {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+footer .footer-nav-left ul li span {
+  font-weight: 700;
+}
+
+footer .footer-nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+footer .footer-nav .footer-nav-right ul {
+  display: flex;
+}
+footer .footer-nav-right img {
+  width: 30px;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+footer .footer-nav-right img:hover {
+  transform: scale(1.3);
+  transition: 0.4s;
+}
+footer .footer-bottom {
+  text-align: center;
+  font-size: 1rem;
+  padding: 8px 0;
+}
+
+/* MEDIA QUERIES */
+/* @media (max-width: 768px) {
+  .main-container .rooms-services {
+    flex-direction: row;
+  }
+} */
+/* 
+@media (max-width: 768px) {
+  .main-container-cards {
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card5";
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container-cards {
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5";
+  }
+} */
