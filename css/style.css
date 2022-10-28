@@ -42,7 +42,6 @@ body {
 
 /* HEADER */
 header {
-  min-width: 320px;
   background: var(--two);
 }
 .header-nav {
@@ -101,9 +100,6 @@ header .header-nav .header-nav-right {
 }
 
 /* MAIN */
-main {
-  min-width: 320px;
-}
 .main-container {
   width: 100%;
   margin-bottom: 200px;
@@ -147,7 +143,6 @@ main {
   height: 300px;
   width: 75vw;
   min-width: 400px;
-  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,8 +151,7 @@ main {
 
 .main-container-text .rooms-services p {
   width: 50%;
-  min-width: 450px;
-  /* background-color: pink; */
+  min-width: 320px;
   font-size: 2.2rem;
   text-transform: uppercase;
   padding: 0 0 16px 16px;
@@ -372,3 +366,23 @@ footer .footer-bottom {
     grid-template-areas: "card1" "card2" "card3" "card4" "card5";
   }
 } */
+
+@media (max-width: 450px) {
+  .main-container h2 {
+    padding: 32px 18px;
+  }
+  .main-container-text .rooms-services p {
+    font-size: 1.6rem;
+  }
+
+  footer .footer-nav-right img {
+    width: 24px;
+    margin: 0 2px;
+  }
+}
+
+@media (max-width: 360px) {
+  footer .footer-nav-right img {
+    width: 18px;
+  }
+}
