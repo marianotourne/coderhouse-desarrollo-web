@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
 
 :root {
-  /* Paleta de colores: https://coolors.co/palette/edede9-d6ccc2-f5ebe0-e3d5ca-d5bdaf */
   --one: #d9dbf1;
   --two: #d0cdd7;
   --three: #acb0bd;
@@ -35,7 +34,6 @@ li {
 /* BODY */
 body {
   width: 100vw;
-  /*height: 100vh;*/
   background: white;
   min-width: 320px;
 }
@@ -44,59 +42,8 @@ body {
 header {
   background: var(--two);
 }
-.header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 24px;
-}
-.header-nav .header-nav-left {
-  width: 30%;
-}
-.header-nav .header-nav-left .logo {
-  color: var(--five);
-  font-size: 2rem;
-  letter-spacing: 1px;
-  /* width: 300px; */
+.isActive {
   font-weight: bold;
-}
-
-/* .header-nav .header-nav-left .logo:first-child {
-  color: var(--five);
-} */
-
-.header-nav .header-nav-left .logo span {
-  color: var(--four);
-  opacity: 0.7;
-}
-
-header .header-nav .header-nav-right {
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 16px;
-}
-
-.header-nav .header-nav-right ul li {
-  list-style-type: none;
-  display: inline-block;
-  font-size: 1.6rem;
-}
-.header-nav .header-nav-right ul li a {
-  color: var(--five);
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: capitalize;
-  margin: 0 16px 0 0;
-  transition: 0.4s;
-}
-.header-nav .header-nav-right ul li a:hover {
-  color: var(--four);
-  transition: 0.4s;
-}
-.active {
-  border-bottom: 2px solid var(--five);
-  padding-bottom: 2px;
 }
 
 /* MAIN */
@@ -296,9 +243,6 @@ footer {
   background-color: var(--two);
   border-top: 16px solid var(--three);
   padding: 10px 30px;
-  /* margin-top: 100px; */
-  /*position: absolute;
-  bottom: 0;*/
 }
 
 footer .footer-nav {

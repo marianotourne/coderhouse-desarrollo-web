@@ -16,20 +16,53 @@
   </head>
   <body>
     <header>
-      <nav class="header-nav">
-        <div class="header-nav-left">
-          <!-- <img src="./assets/logos/logo.png" alt="Logo" /> -->
-          <p class="logo">Cabañas & Spa</p>
-          <p class="logo">Sierras<span> del Tandil</span></p>
-        </div>
-        <div class="header-nav-right">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="habitaciones.html">Habitaciones</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="tarifas.html" class="active">Tarifas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
+      <nav class="navbar navbar-expand-md back-col">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="/assets/logos/logo.png"
+              alt="Logo"
+              width="40"
+              height="40"
+              class="d-inline-block align-text-top rounded-circle"
+            />
+          </a>
+          <div class="fs-3">
+            Cabañas & Spa <span class="fw-bold">Sierras del Tandil</span>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon d-flex"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="d-flex justify-content-end">
+              <div class="navbar-nav text-end">
+                <a class="nav-link fs-3 me-2" href="index.html">Inicio</a>
+                <a class="nav-link fs-3 me-2" href="habitaciones.html"
+                  >Habitaciones</a
+                >
+                <a class="nav-link fs-3 me-2" href="servicios.html"
+                  >Servicios</a
+                >
+                <a
+                  class="nav-link fs-3 me-2 active isActive"
+                  href="tarifas.html"
+                  >Tarifas</a
+                >
+                <a class="nav-link fs-3 me-2" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
