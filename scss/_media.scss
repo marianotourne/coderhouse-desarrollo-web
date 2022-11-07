@@ -1,0 +1,22 @@
+@media (max-width: 450px) {
+  footer {
+    .footer-nav-right {
+      img {
+        width: 24px;
+        margin: 0 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  footer {
+    background-color: red;
+
+    .footer-nav-right {
+      img {
+        width: 18px;
+      }
+    }
+  }
+}
