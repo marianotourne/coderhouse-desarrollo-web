@@ -15,11 +15,12 @@
 
     .image-index {
       background-image: url("../assets/img/home.jpeg");
-      background-color:blue;
+      min-width: 360px;
     }
     
     .image-rooms {
       background-image: url("../assets/img/fondo3.jpg");
+      min-width: 360px;
     }
 
     .titulo {
