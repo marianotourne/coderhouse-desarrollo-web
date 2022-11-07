@@ -205,6 +205,10 @@ footer .footer-bottom {
 }
 
 @media (max-width: 450px) {
+  .main-container-text .rooms-services p {
+    font-size: 1.6rem;
+    color: red;
+  }
   footer .footer-nav-right img {
     width: 24px;
     margin: 0 2px;

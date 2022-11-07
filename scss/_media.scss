@@ -1,4 +1,13 @@
 @media (max-width: 450px) {
+  .main-container-text {
+    .rooms-services {
+      p {
+        font-size: 1.6rem;
+        color:red;//solo para chequear que ande
+
+      }
+    }
+  }
   footer {
     .footer-nav-right {
       img {
