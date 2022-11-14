@@ -20,7 +20,7 @@ li {
 }
 
 header {
-  background: #d0cdd7;
+  background: #d9dbf1;
   min-width: 360px;
 }
 header nav {
@@ -34,6 +34,10 @@ header nav {
 .main-container {
   width: 100%;
   margin-bottom: 200px;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main-container .main-container-image {
   width: 100%;
@@ -51,9 +55,19 @@ header nav {
   background-image: url("../assets/img/fondo3.jpg");
   min-width: 360px;
 }
+.main-container .image-services {
+  background-image: url("../assets/img/fondo5.jpg");
+  min-width: 360px;
+}
+.main-container .image-price {
+  background-image: url("../assets/img/fondo4.jpeg");
+  min-width: 360px;
+  background-position: bottom;
+}
 .main-container .titulo {
   font-size: 2.6rem;
   padding: 32px;
+  width: 100%;
 }
 .main-container .main-container-text {
   display: flex;
@@ -68,7 +82,7 @@ header nav {
 .main-container .main-container-text .rooms-services {
   height: 300px;
   width: 75vw;
-  min-width: 400px;
+  min-width: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +103,7 @@ header nav {
 .main-container .main-container-text .services-item {
   width: 260px;
   height: 100px;
-  background-color: #d9dbf1;
+  background-color: #d0cdd7;
   color: #0b3948;
   margin: 30px;
   display: flex;
@@ -159,13 +173,84 @@ header nav {
   width: 200px;
   transition: all 2s;
 }
+.main-container form {
+  min-width: 350px;
+  max-width: 50%;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #d0cdd7;
+  border-radius: 8px;
+}
+.main-container form label {
+  font-size: 1.6rem;
+  padding-right: 8px;
+  margin-top: 16px;
+}
+.main-container form input,
+.main-container form textarea {
+  color: #0b3948;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+}
+.main-container form #name,
+.main-container form #surname {
+  text-transform: capitalize;
+}
+.main-container form #email {
+  text-transform: lowercase;
+}
+.main-container form .form-dates {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container form .form-width {
+  width: 100%;
+}
+.main-container form .form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px;
+}
+.main-container form .form-buttons button {
+  background-color: #acb0bd;
+  border: 2px solid #0b3948;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  font-size: 1.8rem;
+}
+.main-container form .form-buttons button:hover {
+  background-color: #0b3948;
+  border: 2px solid white;
+  color: white;
+}
 
+/*
+
+form .form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form .form-buttons button {
+  background-color: white;
+  border: 2px solid var(--five);
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+*/
 footer {
   width: 100%;
   font-size: 1.4rem;
   background-color: #d0cdd7;
   border-top: 16px solid #acb0bd;
   padding: 10px 30px;
+  min-width: 360px;
 }
 footer .footer-nav {
   padding-top: 8px;
@@ -205,26 +290,29 @@ footer .footer-nav .footer-nav-right ul img:hover {
 }
 footer .footer-bottom {
   text-align: center;
-  font-size: 1rem;
   padding: 8px 0;
+}
+footer .footer-bottom p {
+  font-size: 1.2rem;
+  margin: 0;
+  opacity: 0.8;
 }
 
 @media (max-width: 450px) {
-  .main-container-text .rooms-services p {
-    font-size: 1.6rem;
-    color: red;
+  .main-container .main-container-text .rooms-services p {
+    font-size: 1.8rem;
   }
-  footer .footer-nav-right img {
+  footer .footer-nav .footer-nav-right ul img {
     width: 24px;
     margin: 0 2px;
   }
 }
-@media (max-width: 360px) {
-  footer {
-    background-color: red;
-  }
-  footer .footer-nav-right img {
+@media (max-width: 430px) {
+  footer .footer-nav .footer-nav-right ul img {
     width: 18px;
+  }
+  footer .footer-bottom p {
+    font-size: 1rem;
   }
 }
 

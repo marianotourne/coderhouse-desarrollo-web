@@ -1,151 +1,241 @@
-
 //MAIN
 .main-container {
+  width: 100%;
+  margin-bottom: 200px;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .main-container-image {
     width: 100%;
-    margin-bottom: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+  }
 
-    .main-container-image {
-        width: 100%;
-        height: 250px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        opacity: 0.8;
-      }
+  .image-index {
+    @include image("../assets/img/home.jpeg", 360px);
+  }
 
-    .image-index {
-      background-image: url("../assets/img/home.jpeg");
+  .image-rooms {
+    @include image("../assets/img/fondo3.jpg", 360px);
+  }
+
+  .image-services {
+    @include image("../assets/img/fondo5.jpg", 360px);
+  }
+
+  .image-price {
+    @include image("../assets/img/fondo4.jpeg", 360px);
+    background-position: bottom;
+  }
+
+  .titulo {
+    font-size: $font-title;
+    padding: 32px;
+    width: 100%;
+  }
+
+  .main-container-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    p {
+      font-size: $font-text;
+      padding: 0 32px;
+      line-height: 3rem;
+    }
+
+    .rooms-services {
+      height: 300px;
+      width: 75vw;
       min-width: 360px;
-    }
-    
-    .image-rooms {
-      background-image: url("../assets/img/fondo3.jpg");
-      min-width: 360px;
-    }
-
-    .titulo {
-      font-size: $font-title;
-      padding: 32px;
-    }
-
-    .main-container-text {
       display: flex;
+      align-items: center;
       justify-content: center;
       flex-wrap: wrap;
 
       p {
-          font-size: $font-text;
-          padding: 0 32px;
-          line-height: 3rem;
-        }
-      
-      .rooms-services {
-        height: 300px;
-        width: 75vw;
-        min-width: 400px;
+        width: 50%;
+        min-width: 320px;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        padding: 0 0 16px 16px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
 
-        p {
-          width: 50%;
-          min-width: 320px;
-          font-size: 2.2rem;
-          text-transform: uppercase;
-          padding: 0 0 16px 16px;
-          display: flex;
-          align-items: center;
-
-          span {
-            padding-right: 6px;
-          }
+        span {
+          padding-right: 6px;
         }
-      }
-      //SERVICIOS
-      .services-item {
-        width: 260px;
-        height: 100px;
-        background-color: $one;
-        color: $five;
-        margin: 30px;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-size: $font-subtitle;
-        border-radius: 0 32px 0 32px;
       }
     }
-    
-    //TARIFAS
-    .main-container-cards {
+    //SERVICIOS
+    .services-item {
+      width: 260px;
+      height: 100px;
+      background-color: $two;
+      color: $five;
+      margin: 30px;
+      display: flex;
+      text-align: center;
+      align-items: center;
       justify-content: center;
+      font-size: $font-subtitle;
+      border-radius: 0 32px 0 32px;
+    }
+  }
 
-      section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+  //TARIFAS
+  .main-container-cards {
+    justify-content: center;
+
+    section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin: 10px;
+      padding: 20px 20px;
+      height: 300px;
+      width: 200px;
+      /* border: 1px solid black; */
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+      border-radius: 6px;
+      background-color: $two;
+    }
+
+    .cards {
+      height: auto;
+      text-align: center;
+
+      .card-item {
         margin: 10px;
-        padding: 20px 20px;
-        height: 300px;
-        width: 200px;
-        /* border: 1px solid black; */
+        padding: 20px;
+        background-color: $two;
         box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
         border-radius: 6px;
-        background-color: $two;
-      }
 
-      .cards {
-        height: auto;
-        text-align: center;
+        h3 {
+          font-size: $font-title;
+        }
 
-        .card-item {
-          margin: 10px;
-          padding: 20px;
-          background-color: $two;
-          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+        img {
+          width: 70%;
+          border-radius: 10px;
+        }
+
+        p {
+          font-size: $font-subtitle;
+          margin-top: 10px;
+
+          span {
+            padding-right: 8px;
+          }
+        }
+
+        button {
+          width: 100px;
+          height: 40px;
           border-radius: 6px;
+          font-size: $font-text;
+          background-color: $three;
+          border: 2px solid $five;
+          color: $five;
+          cursor: pointer;
+          transition: all 0.8s;
 
-          h3 {
-            font-size: $font-title;
-          }
-
-          img {
-            width: 70%;
-            border-radius: 10px;
-          }
-
-          p {
-            font-size: $font-subtitle;
-            margin-top: 10px;
-
-            span {
-              padding-right: 8px;
-            }
-          }
-
-          button {
-            width: 100px;
-            height: 40px;
-            border-radius: 6px;
-            font-size: $font-text;
-            background-color: $three;
-            border: 2px solid $five;
-            color: $five;
+          &:hover {
+            background-color: $five;
+            color: $three;
             cursor: pointer;
-            transition: all 0.8s;
-
-            &:hover {
-              background-color: $five;
-              color: $three;
-              cursor: pointer;
-              width: 200px;
-              transition: all 2s;
-            }
+            width: 200px;
+            transition: all 2s;
           }
         }
       }
     }
   }
+  form {
+    min-width: 350px;
+    max-width: 50%;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: $two;
+    border-radius: 8px;
+
+    label {
+      font-size: 1.6rem;
+      padding-right: 8px;
+      margin-top: 16px;
+    }
+
+    input,
+    textarea {
+      color: $five;
+      font-size: $font-text;
+      font-weight: bold;
+      padding: 4px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    #name,
+    #surname {
+      text-transform: capitalize;
+    }
+    #email {
+      text-transform: lowercase;
+    }
+
+    .form-dates {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-width {
+      width: 100%;
+    }
+
+    .form-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 16px;
+
+      button {
+        background-color: $three;
+        border: 2px solid $five;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-bottom: 4px;
+        font-size: $font-text;
+
+        &:hover {
+          background-color: $five;
+          border: 2px solid white;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+/*
+
+form .form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form .form-buttons button {
+  background-color: white;
+  border: 2px solid var(--five);
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+*/

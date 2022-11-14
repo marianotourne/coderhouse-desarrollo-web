@@ -1,11 +1,11 @@
 header {
-    background: $two;
-    min-width:360px;
-    
-    nav{
-      min-width:360px;
-    }
+  background: $one;
+  min-width: 360px;
+
+  nav {
+    min-width: 360px;
   }
-  .isActive {
-    font-weight: bold;
-  }
+}
+.isActive {
+  font-weight: bold;
+}

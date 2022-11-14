@@ -1,0 +1,4 @@
+@mixin image ($file, $size) {
+    background-image: url($file);
+    min-width: $size;
+}
