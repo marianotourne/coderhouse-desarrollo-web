@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Tandil,cabaña,economico,single,doble,premium,spa,masaje,cochera,desayuno,americano,huesped,dormitorio,bañera,tarifa,barato,alojamiento"
+    />
+    <meta
+      name="description"
+      content="Cabañas situadas en las afueras de la ciudad Tandil, proyectado a fin de ofrecer al huésped la posibilidad de sentirse como en su propia casa."
+    />
     <title>Cabañas & Spa Sierras del Tandil</title>
-    <!-- CSS only -->
+    <link rel="icon" href="assets/logos/logo.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" class="css" />
   </head>
   <body>
@@ -67,48 +76,55 @@
       </nav>
     </header>
     <main class="main-container">
-      <div class="main-container-text">
-        <h2>Formulario de contacto</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-          voluptatibus soluta debitis laborum maiores consequuntur ratione odit
-          distinctio neque tempore veritatis praesentium dicta, maxime
-          voluptates consectetur explicabo facere nostrum voluptatem.
-        </p>
+      <div data-aos="fade-right" data-aos-duration="2000" class="titulo">
+        Contáctese
       </div>
       <form action="">
         <label for="name">Nombre</label>
-        <input type="text" id="name" />
-        <br /><br />
+        <input type="text" id="name" class="form-width" />
+
         <label for="surname">Apellido</label>
-        <input type="text" id="surname" />
-        <br /><br />
+        <input type="text" id="surname" class="form-width" />
+
         <label for="email">eMail</label>
-        <input type="email" name="" id="email" />
-        <br /><br />
+        <input type="email" name="" id="email" class="form-width" />
+
         <label for="comentario">Mensaje</label>
-        <textarea name="" id="comentario" cols="30" rows="5"></textarea>
-        <br /><br />
-        <label for="entrada">Entrada</label>
-        <input type="date" id="entrada" />
-        <br /><br />
-        <label for="entrada">Salida</label>
-        <input type="date" id="entrada" />
-        <br /><br />
-        <label>Opción a consultar</label>
-        <input list="opcion" placeholder="Seleccione opción" />
-        <datalist id="opcion">
-          <option value="Single"></option>
-          <option value="Double"></option>
-          <option value="Double premium"></option>
-          <option value="Día de spa"></option>
-          <option value="Masajes"></option>
-          <option value="Gift card"></option>
-        </datalist>
-        <br /><br />
+        <textarea
+          name=""
+          id="comentario"
+          cols="30"
+          rows="3"
+          class="form-width"
+        ></textarea>
+
+        <div class="form-dates">
+          <div class="form-dates-in">
+            <label for="entrada">Entrada</label>
+            <input type="date" id="entrada" />
+          </div>
+
+          <div class="form-dates-out">
+            <label for="entrada">Salida</label>
+            <input type="date" id="entrada" />
+          </div>
+        </div>
+
+        <div class="form-options">
+          <label>Opción a consultar</label>
+          <input list="opcion" placeholder="Seleccione opción" />
+          <datalist id="opcion" class="form-width">
+            <option value="Single"></option>
+            <option value="Double"></option>
+            <option value="Double premium"></option>
+            <option value="Día de spa"></option>
+            <option value="Masajes"></option>
+            <option value="Gift card"></option>
+          </datalist>
+        </div>
         <label for="check">Suscribirme al newsletter</label>
         <input type="checkbox" name="check" />
-        <br /><br />
+
         <div class="form-buttons">
           <div>
             <button type="reset">Borrar</button>
@@ -147,15 +163,18 @@
         </section>
       </nav>
       <section class="footer-bottom">
-        Copyright © 2022 Cabañas & Spa Sierras del Tandil - Diseño: Mariano
-        Tourné
+        <p>Copyright © 2022 Cabañas & Spa Sierras del Tandil</p>
+        <p>Diseño: Mariano Tourné</p>
       </section>
     </footer>
-    <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

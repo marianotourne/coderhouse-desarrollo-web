@@ -1,22 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
-
-:root {
-  --one: #d9dbf1;
-  --two: #d0cdd7;
-  --three: #acb0bd;
-  --four: #416165;
-  --five: #0b3948;
-  --font: "Josefin Sans", sans-serif;
-  --font-title: 2.6rem;
-  --font-subtitle: 2rem;
-  --font-text: 1.8rem;
-}
-/* FORMATEO GENERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font);
+  font-family: "Josefin Sans", sans-serif;
 }
 
 html {
@@ -27,31 +14,31 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
 li {
   list-style: none;
 }
 
-/* BODY */
-body {
-  width: 100vw;
-  background: white;
-  min-width: 320px;
+header {
+  background: #d9dbf1;
+  min-width: 360px;
+}
+header nav {
+  min-width: 360px;
 }
 
-/* HEADER */
-header {
-  background: var(--two);
-}
 .isActive {
   font-weight: bold;
 }
 
-/* MAIN */
 .main-container {
   width: 100%;
   margin-bottom: 200px;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .main-container .main-container-image {
   width: 100%;
   height: 250px;
@@ -60,43 +47,48 @@ header {
   background-position: center;
   opacity: 0.8;
 }
-
-.image-index {
+.main-container .image-index {
   background-image: url("../assets/img/home.jpeg");
+  min-width: 360px;
 }
-
-.image-rooms {
+.main-container .image-rooms {
   background-image: url("../assets/img/fondo3.jpg");
+  min-width: 360px;
 }
-
+.main-container .image-services {
+  background-image: url("../assets/img/fondo5.jpg");
+  min-width: 360px;
+}
+.main-container .image-price {
+  background-image: url("../assets/img/fondo4.jpeg");
+  min-width: 360px;
+  background-position: bottom;
+}
 .main-container .titulo {
-  font-size: var(--font-title);
+  font-size: 2.6rem;
   padding: 32px;
+  width: 100%;
 }
 .main-container .main-container-text {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
-
 .main-container .main-container-text p {
-  font-size: var(--font-text);
+  font-size: 1.8rem;
   padding: 0 32px;
   line-height: 3rem;
 }
-
-/* HABITACIONES */
-
-.main-container-text .rooms-services {
+.main-container .main-container-text .rooms-services {
   height: 300px;
   width: 75vw;
-  min-width: 400px;
+  min-width: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.main-container-text .rooms-services p {
+.main-container .main-container-text .rooms-services p {
   width: 50%;
   min-width: 320px;
   font-size: 2.2rem;
@@ -105,39 +97,26 @@ header {
   display: flex;
   align-items: center;
 }
-
-.main-container-text .rooms-services p span {
+.main-container .main-container-text .rooms-services p span {
   padding-right: 6px;
 }
-
-/* SERVICIOS */
-.main-container-text {
-  display: flex;
-  flex-wrap: wrap;
-}
-.main-container-text .services-item {
+.main-container .main-container-text .services-item {
   width: 260px;
   height: 100px;
-  background-color: var(--one);
-  color: var(--five);
+  background-color: #d0cdd7;
+  color: #0b3948;
   margin: 30px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-subtitle);
+  font-size: 2rem;
   border-radius: 0 32px 0 32px;
 }
-
-/* TARIFAS */
-.main-container-cards {
-  /* display: grid;
-  grid-template-areas: "card1 card2 card3 card4 card5";
-  justify-content: space-evenly; */
+.main-container .main-container-cards {
   justify-content: center;
 }
-
-.main-container-cards section {
+.main-container .main-container-cards section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,101 +128,108 @@ header {
   /* border: 1px solid black; */
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
   border-radius: 6px;
-  background-color: var(--two);
+  background-color: #d0cdd7;
 }
-
-.main-container-cards .cards {
+.main-container .main-container-cards .cards {
   height: auto;
   text-align: center;
 }
-
-.main-container-cards .cards .card-item {
+.main-container .main-container-cards .cards .card-item {
   margin: 10px;
   padding: 20px;
-  background-color: var(--two);
+  background-color: #d0cdd7;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
   border-radius: 6px;
 }
-/* .main-container-cards section h3 { */
-.main-container-cards div h3 {
-  font-size: var(--font-title);
+.main-container .main-container-cards .cards .card-item h3 {
+  font-size: 2.6rem;
 }
-
-/* .main-container-cards section img { */
-.main-container-cards div img {
+.main-container .main-container-cards .cards .card-item img {
   width: 70%;
   border-radius: 10px;
 }
-/* .main-container-cards section p { */
-.main-container-cards div p {
-  font-size: var(--font-subtitle);
+.main-container .main-container-cards .cards .card-item p {
+  font-size: 2rem;
   margin-top: 10px;
 }
-/* .main-container-cards section p span { */
-.main-container-cards div p span {
+.main-container .main-container-cards .cards .card-item p span {
   padding-right: 8px;
 }
-
-/* .main-container-cards section button { */
-.main-container-cards div button {
+.main-container .main-container-cards .cards .card-item button {
   width: 100px;
   height: 40px;
   border-radius: 6px;
-  font-size: var(--font-text);
-  background-color: var(--three);
-  border: 2px solid var(--five);
-  color: var(--five);
+  font-size: 1.8rem;
+  background-color: #acb0bd;
+  border: 2px solid #0b3948;
+  color: #0b3948;
   cursor: pointer;
   transition: all 0.8s;
 }
-.main-container-cards div button:hover {
-  background-color: var(--five);
-  color: var(--three);
+.main-container .main-container-cards .cards .card-item button:hover {
+  background-color: #0b3948;
+  color: #acb0bd;
   cursor: pointer;
   width: 200px;
   transition: all 2s;
 }
-
-/* DEFINO GRID EN CADA UNA DE LAS CARDS */
-.card1 {
-  grid-area: card1;
-}
-.card2 {
-  grid-area: card2;
-}
-.card3 {
-  grid-area: card3;
-}
-.card4 {
-  grid-area: card4;
-}
-.card5 {
-  grid-area: card5;
-}
-
-/* FORM */
-form {
-  width: 350px;
+.main-container form {
+  min-width: 350px;
+  max-width: 50%;
   height: auto;
   padding: 10px;
   margin: 0 auto;
-  background-color: var(--four);
+  background-color: #d0cdd7;
   border-radius: 8px;
 }
-
-form label {
-  font-size: 1.2rem;
+.main-container form label {
+  font-size: 1.6rem;
   padding-right: 8px;
+  margin-top: 16px;
 }
-
-form input,
-form textarea {
-  color: var(--five);
+.main-container form input,
+.main-container form textarea {
+  color: #0b3948;
+  font-size: 1.8rem;
   font-weight: bold;
   padding: 4px;
   border: none;
   border-radius: 4px;
 }
+.main-container form #name,
+.main-container form #surname {
+  text-transform: capitalize;
+}
+.main-container form #email {
+  text-transform: lowercase;
+}
+.main-container form .form-dates {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container form .form-width {
+  width: 100%;
+}
+.main-container form .form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px;
+}
+.main-container form .form-buttons button {
+  background-color: #acb0bd;
+  border: 2px solid #0b3948;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  font-size: 1.8rem;
+}
+.main-container form .form-buttons button:hover {
+  background-color: #0b3948;
+  border: 2px solid white;
+  color: white;
+}
+
+/*
 
 form .form-buttons {
   display: flex;
@@ -257,98 +243,77 @@ form .form-buttons button {
   border-radius: 4px;
   margin-bottom: 4px;
 }
-
-/* SECCION FOOTER */
+*/
 footer {
   width: 100%;
   font-size: 1.4rem;
-  background-color: var(--two);
-  border-top: 16px solid var(--three);
+  background-color: #d0cdd7;
+  border-top: 16px solid #acb0bd;
   padding: 10px 30px;
+  min-width: 360px;
 }
-
 footer .footer-nav {
   padding-top: 8px;
   display: flex;
 }
-
-footer .footer-nav-left {
+footer .footer-nav .footer-nav-left {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 70%;
 }
-
-footer .footer-nav-left ul {
+footer .footer-nav .footer-nav-left ul {
   font-size: 1.2rem;
   line-height: 2rem;
 }
-footer .footer-nav-left ul li span {
+footer .footer-nav .footer-nav-left ul li span {
   font-weight: 700;
 }
-
-footer .footer-nav-right {
+footer .footer-nav .footer-nav-right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 25%;
 }
-
 footer .footer-nav .footer-nav-right ul {
   display: flex;
 }
-footer .footer-nav-right img {
+footer .footer-nav .footer-nav-right ul img {
   width: 30px;
   margin: 0 8px;
   cursor: pointer;
   transition: 0.4s;
 }
-
-footer .footer-nav-right img:hover {
+footer .footer-nav .footer-nav-right ul img:hover {
   transform: scale(1.3);
   transition: 0.4s;
 }
 footer .footer-bottom {
   text-align: center;
-  font-size: 1rem;
   padding: 8px 0;
 }
-
-/* MEDIA QUERIES */
-/* @media (max-width: 768px) {
-  .main-container .rooms-services {
-    flex-direction: row;
-  }
-} */
-/* 
-@media (max-width: 768px) {
-  .main-container-cards {
-    grid-template-areas: "card1 card2" "card3 card4" "card5 card5";
-  }
+footer .footer-bottom p {
+  font-size: 1.2rem;
+  margin: 0;
+  opacity: 0.8;
 }
 
-@media (max-width: 600px) {
-  .main-container-cards {
-    grid-template-areas: "card1" "card2" "card3" "card4" "card5";
-  }
-} */
-
 @media (max-width: 450px) {
-  .main-container h2 {
-    padding: 32px 18px;
+  .main-container .main-container-text .rooms-services p {
+    font-size: 1.8rem;
   }
-  .main-container-text .rooms-services p {
-    font-size: 1.6rem;
-  }
-
-  footer .footer-nav-right img {
+  footer .footer-nav .footer-nav-right ul img {
     width: 24px;
     margin: 0 2px;
   }
 }
-
-@media (max-width: 360px) {
-  footer .footer-nav-right img {
+@media (max-width: 430px) {
+  footer .footer-nav .footer-nav-right ul img {
     width: 18px;
   }
+  footer .footer-bottom p {
+    font-size: 1rem;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
