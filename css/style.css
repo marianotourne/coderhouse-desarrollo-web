@@ -125,7 +125,6 @@ header nav {
   padding: 20px 20px;
   height: 300px;
   width: 200px;
-  /* border: 1px solid black; */
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
   border-radius: 6px;
   background-color: #d0cdd7;
@@ -190,7 +189,7 @@ header nav {
 .main-container form input,
 .main-container form textarea {
   color: #0b3948;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   padding: 4px;
   border: none;
@@ -229,21 +228,6 @@ header nav {
   color: white;
 }
 
-/*
-
-form .form-buttons {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-form .form-buttons button {
-  background-color: white;
-  border: 2px solid var(--five);
-  padding: 4px;
-  border-radius: 4px;
-  margin-bottom: 4px;
-}
-*/
 footer {
   width: 100%;
   font-size: 1.4rem;

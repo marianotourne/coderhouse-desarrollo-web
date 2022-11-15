@@ -6,5 +6,5 @@ $four: #416165;
 $five: #0b3948;
 $font: "Josefin Sans", sans-serif;
 $font-title: 2.6rem;
-$font-subtitle: 2rem;
-$font-text: 1.8rem;
+$font-subtitle: $font-title - 0.6rem;
+$font-text: $font-title - 0.8rem;
