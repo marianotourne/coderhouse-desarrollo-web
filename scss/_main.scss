@@ -158,6 +158,18 @@
       }
     }
   }
+
+  //CAROUSEL
+  .carousel-container {
+    width: 90%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    .carousel-image {
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+
   form {
     min-width: 350px;
     max-width: 50%;

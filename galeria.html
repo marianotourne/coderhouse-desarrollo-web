@@ -67,12 +67,12 @@
                 <a class="nav-link fs-3 me-2" href="servicios.html"
                   >Servicios</a
                 >
+                <a class="nav-link fs-3 me-2" href="tarifas.html">Tarifas</a>
                 <a
                   class="nav-link fs-3 me-2 active isActive"
-                  href="tarifas.html"
-                  >Tarifas</a
+                  href="galeria.html"
+                  >Galeria</a
                 >
-                <a class="nav-link fs-3 me-2" href="galeria.html">Galeria</a>
                 <a class="nav-link fs-3 me-2" href="contacto.html">Contacto</a>
               </div>
             </div>
@@ -81,76 +81,132 @@
       </nav>
     </header>
     <main class="main-container">
-      <!-- IMAGE CONTAINER -->
-      <section class="main-container-image image-price"></section>
-
       <!-- TITLE -->
       <div data-aos="fade-right" data-aos-duration="2000" class="titulo">
-        Nuestras tarifas
+        Galería de imágenes
       </div>
 
-      <!-- SECTION CONTAINER -->
-      <div class="row container-fluid main-container-cards">
-        <div class="col col-lg-4 col-md-6 col-12 cards card1">
-          <div data-aos="flip-left">
-            <div class="card-item">
-              <h3>Single</h3>
-              <img src="./assets/img/product2.jpeg" alt="single-room" />
-              <p><span>$</span>1000</p>
-              <button>Reservar</button>
-            </div>
+      <!-- CARROUSEL -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-container"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="d-block w-100 carousel-image"
+              alt="room1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="d-block w-100 carousel-image"
+              alt="room2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="d-block w-100 carousel-image"
+              alt="room3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="d-block w-100 carousel-image"
+              alt="spa1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/3673941/pexels-photo-3673941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="d-block w-100 carousel-image"
+              alt="spa2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/11198585/pexels-photo-11198585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="d-block w-100 carousel-image"
+              alt="bar1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/169391/pexels-photo-169391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="d-block w-100 carousel-image"
+              alt="bar2"
+            />
           </div>
         </div>
-        <div class="col col-lg-4 col-md-6 col-12 cards card2">
-          <div data-aos="flip-left">
-            <div class="card-item">
-              <h3>Double</h3>
-              <img src="./assets/img/product3.jpeg" alt="double-room" />
-              <p><span>$</span>2000</p>
-              <button>Reservar</button>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-12 cards card3">
-          <div data-aos="flip-left">
-            <div class="card-item">
-              <h3>Double premium</h3>
-              <img src="./assets/img/product1.jpeg" alt="double-premium-room" />
-              <p><span>$</span>3000</p>
-              <button>Reservar</button>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-12 cards card4">
-          <div data-aos="flip-left">
-            <div class="card-item">
-              <h3>Día de spa</h3>
-              <img src="./assets/img/product4.jpeg" alt="spa-day" />
-              <p><span>$</span>800</p>
-              <button>Reservar</button>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-12 cards card4">
-          <div data-aos="flip-left">
-            <div class="card-item">
-              <h3>Masajes</h3>
-              <img src="./assets/img/product5.jpeg" alt="spa-day" />
-              <p><span>$</span>500</p>
-              <button>Reservar</button>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-12 cards card4">
-          <div data-aos="flip-left">
-            <div class="card-item">
-              <h3>Gift card</h3>
-              <img src="./assets/img/product6.jpeg" alt="spa-day" />
-              <p>A elección</p>
-              <button>Reservar</button>
-            </div>
-          </div>
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </main>
 

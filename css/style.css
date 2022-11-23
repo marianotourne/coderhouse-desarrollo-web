@@ -172,6 +172,14 @@ header nav {
   width: 200px;
   transition: all 2s;
 }
+.main-container .carousel-container {
+  width: 90%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.main-container .carousel-container .carousel-image {
+  height: 500px;
+  object-fit: cover;
+}
 .main-container form {
   min-width: 350px;
   max-width: 50%;
