@@ -20,7 +20,7 @@ li {
 }
 
 header {
-  background: #d9dbf1;
+  background: linear-gradient(0deg, white 0%, #d9dbf1 30%);
   min-width: 360px;
 }
 header nav {
@@ -103,7 +103,7 @@ header nav {
 .main-container .main-container-text .services-item {
   width: 260px;
   height: 100px;
-  background-color: #d0cdd7;
+  background: linear-gradient(120deg, #d0cdd7 36%, #acb0bd 80%);
   color: #0b3948;
   margin: 30px;
   display: flex;
@@ -231,9 +231,14 @@ header nav {
   font-size: 1.8rem;
 }
 .main-container form .form-buttons button:hover {
-  background-color: #0b3948;
   border: 2px solid white;
   color: white;
+}
+.main-container form .form-buttons .btn-reset:hover {
+  background-color: #bf2b2b;
+}
+.main-container form .form-buttons .btn-send:hover {
+  background-color: green;
 }
 
 footer {
@@ -241,7 +246,7 @@ footer {
   font-size: 1.4rem;
   background-color: #d0cdd7;
   border-top: 16px solid #acb0bd;
-  padding: 10px 30px;
+  padding: 10px 16px;
   min-width: 360px;
 }
 footer .footer-nav {

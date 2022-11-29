@@ -77,7 +77,8 @@
     .services-item {
       width: 260px;
       height: 100px;
-      background-color: $two;
+      background: linear-gradient(120deg, $two 36%, $three 80%);
+      //background: linear-gradient(120deg, rgba(208,205,215,1) 36%, rgba(172,176,189,1) 80%);
       color: $five;
       margin: 30px;
       display: flex;
@@ -226,10 +227,15 @@
         font-size: $font-text;
 
         &:hover {
-          background-color: $five;
           border: 2px solid white;
           color: white;
         }
+      }
+      .btn-reset:hover {
+        background-color: #bf2b2b;
+      }
+      .btn-send:hover {
+        background-color: green;
       }
     }
   }
